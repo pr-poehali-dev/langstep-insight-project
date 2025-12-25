@@ -82,7 +82,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F1F0FB] via-white to-[#E5DEFF]">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <header className="text-center mb-12 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -317,7 +317,7 @@ const Index = () => {
                 <div className="h-64">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={chartData}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#E5DEFF" />
+                      <CartesianGrid strokeDasharray="3 3" stroke="#DBEAFE" />
                       <XAxis 
                         dataKey="day" 
                         label={{ value: 'День', position: 'insideBottom', offset: -5 }}
@@ -330,9 +330,9 @@ const Index = () => {
                       <Line 
                         type="monotone" 
                         dataKey="motivation" 
-                        stroke="#6E59A5" 
+                        stroke="#DC2626" 
                         strokeWidth={3}
-                        dot={{ fill: '#6E59A5', r: 5 }}
+                        dot={{ fill: '#DC2626', r: 5 }}
                       />
                     </LineChart>
                   </ResponsiveContainer>
