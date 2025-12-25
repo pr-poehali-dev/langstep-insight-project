@@ -82,7 +82,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <header className="text-center mb-12 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -157,7 +157,7 @@ const Index = () => {
               </Card>
             </div>
 
-            <Card className="mt-8 bg-gradient-to-r from-primary/5 to-accent/10 border-primary/20">
+            <Card className="mt-8 bg-gradient-to-r from-primary/20 to-secondary/20 border-primary/30">
               <CardHeader>
                 <CardTitle className="text-center flex items-center justify-center gap-2">
                   <Icon name="Compass" size={28} />
@@ -192,7 +192,7 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="p-6 bg-accent/30 rounded-lg border border-primary/20">
+                <div className="p-6 bg-secondary/10 rounded-lg border border-secondary/30">
                   <p className="text-lg font-medium text-foreground italic">
                     "{prompts[currentPromptIndex]}"
                   </p>
@@ -317,7 +317,7 @@ const Index = () => {
                 <div className="h-64">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={chartData}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#DBEAFE" />
+                      <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
                       <XAxis 
                         dataKey="day" 
                         label={{ value: 'День', position: 'insideBottom', offset: -5 }}
@@ -351,7 +351,7 @@ const Index = () => {
                 {entries.slice().reverse().map((entry) => (
                   <div 
                     key={entry.id} 
-                    className="p-4 bg-accent/20 rounded-lg border border-primary/10 hover:border-primary/30 transition-colors"
+                    className="p-4 bg-card/50 rounded-lg border border-border hover:border-primary/50 transition-colors"
                   >
                     <div className="flex items-start justify-between mb-2">
                       <p className="text-sm font-medium italic text-muted-foreground">
