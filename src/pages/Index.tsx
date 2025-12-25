@@ -330,9 +330,9 @@ const Index = () => {
                       <Line 
                         type="monotone" 
                         dataKey="motivation" 
-                        stroke="#DC2626" 
+                        stroke="#F97316" 
                         strokeWidth={3}
-                        dot={{ fill: '#DC2626', r: 5 }}
+                        dot={{ fill: '#F97316', r: 5 }}
                       />
                     </LineChart>
                   </ResponsiveContainer>
