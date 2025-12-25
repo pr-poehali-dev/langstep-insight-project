@@ -87,9 +87,9 @@ const Index = () => {
         <header className="text-center mb-12 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Icon name="BookOpen" size={40} className="text-primary" />
-            <h1 className="text-5xl font-bold text-primary">LangStep</h1>
+            <h1 className="text-5xl font-bold text-[#f3f3f3]">LangStep</h1>
           </div>
-          <p className="text-xl text-muted-foreground italic">One step — one insight.</p>
+          <p className="text-xl italic text-[#cb09cb]">One step — one insight.</p>
         </header>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
